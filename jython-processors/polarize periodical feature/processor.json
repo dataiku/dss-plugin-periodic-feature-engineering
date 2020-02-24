@@ -32,7 +32,7 @@
         {
             "name": "parameter1",
             "label": "User-readable name",
-            "type": "STRING",
+            "type": "COLUMN",
             "description": "Some documentation for parameter1",
             "mandatory": true
         },
