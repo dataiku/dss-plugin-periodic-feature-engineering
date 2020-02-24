@@ -5,4 +5,15 @@ def process(row):
     column_period = params.get('column_period')
     arg = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
     
-    return arg
+    arg_name = periodical_column_name + "_arg"
+    
+    cos_name = periodical_column_name + "_cos"
+    sin_name = periodical_column_name + "_sin"
+    tan_name = periodical_column_name + "_tan"
+    cos_val = math.cos(arg)
+    sin_val = math.sin(arg)
+    tan_val = math.tan(arg)
+    
+    res = {arg_name:arg_val, cos_name:cos_val, sin_name:sin_val, tan_name:tan_val, }
+    
+    return res
