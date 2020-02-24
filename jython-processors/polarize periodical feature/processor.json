@@ -12,7 +12,7 @@ The way to read the measure on the resulting trigonometric circle is then the sa
 zdaz\
     Example of periodical columns : \
     - 'Day of year' starts from 1 and goes toward 366 maximum : but the December 31st is really close to Janueary 1st.\
-        _TESTTTTTT
+        _TESTTTTTT\
     - 'Day of month' starts from 1 and goes toward 31 maximum : but the last day of a given month is really close to se first one of the next month.\
     - 'Day of week' starts from 1 and goes toward 7 : but sunday really close to  monday.",
 
