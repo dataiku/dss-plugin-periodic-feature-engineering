@@ -5,7 +5,9 @@
         "label": "Custom processor polarize periodical feature",
 
         // description: longer string to help end users understand what this data prep step does
-        "description": "This processor allows to project a periodical column values in a trigonometric circle so that you naturally get the argument of this column values on this circle.",
+        "description": "This processor allows to project a periodical column values in a trigonometric circle. \
+        Then you naturally get the argument of this column values on this circle.\
+        The way to read the resulting trigonometric circle is the same as the one to read a clock (it starts from the top and goes in the clockwise direction of roatation )",
 
         // icon: must be one of the FontAwesome 3.2.1 icons, complete list here at https://fontawesome.com/v3.2.1/icons/
         "icon": "icon-circle-blank"
