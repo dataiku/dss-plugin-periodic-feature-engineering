@@ -14,6 +14,6 @@ def process(row):
     sin_val = math.sin(arg_val)
     tan_val = math.tan(arg_val)
     
-    res = {arg_name:arg_val, cos_name:cos_val, sin_name:sin_val, tan_name:tan_val, }
+    res = {arg_name:arg_val, cos_name:cos_val, sin_name:sin_val, tan_name:tan_val}
     
     return res
