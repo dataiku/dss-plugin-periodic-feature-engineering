@@ -17,4 +17,4 @@ def process(row):
     
     res = {arg_name:arg_val, cos_name:cos_val, sin_name:sin_val, tan_name:tan_val}
     
-    return res
+    return json.dump(res)
