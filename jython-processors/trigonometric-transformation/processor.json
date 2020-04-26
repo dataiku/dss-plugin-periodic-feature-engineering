@@ -45,7 +45,7 @@ The way to read the measure on the resulting trigonometric circle is then the sa
             "name": "periodical_column",
             "label": "periodiclal column",
             "type": "COLUMN",
-            "description": "The column containing a periodical information (ex: day of year, day of month, day of week, month....)",
+            "description": "Which column contains a periodical information (ex: day of year, day of month, day of week, month....)",
             "mandatory": true
         },
         {
