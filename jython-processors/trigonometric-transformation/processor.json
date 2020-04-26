@@ -77,7 +77,7 @@ The way to read the measure on the resulting trigonometric circle is then the sa
             "description": ""
         },
         {
-            "name": "output_rag",
+            "name": "output_arg",
             "label":"output the feature argument",
             "type": "BOOLEAN",
             "defaultValue" : false,
