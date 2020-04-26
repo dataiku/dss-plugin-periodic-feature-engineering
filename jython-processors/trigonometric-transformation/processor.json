@@ -53,7 +53,7 @@ The way to read the measure on the resulting trigonometric circle is then the sa
             "label":"column period",
             "type": "DOUBLE",
             "defaultValue" : 365.24,
-            "description": "The period of the column containing the periodical information (ex: 365.24 for day of year, 30.43 for day of month, 7 for day of week,, 12 for month....)"
+            "description": "Periodical column period"
         }
     ]
 }
