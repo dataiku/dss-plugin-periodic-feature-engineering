@@ -2,7 +2,7 @@
 {
     "meta" : {
         // label: name of the data prep step as displayed, should be short
-        "label": "Custom processor trigonometric transform",
+        "label": "Custom processor trigonometric transformation",
 
         // description: longer string to help end users understand what this data prep step does
         "description": "This processor allows to project a periodical column values in a reversed trigonometric circle. \
