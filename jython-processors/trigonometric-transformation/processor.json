@@ -54,6 +54,34 @@ The way to read the measure on the resulting trigonometric circle is then the sa
             "type": "DOUBLE",
             "defaultValue" : 365.24,
             "description": "Periodical column period"
+        },
+        {
+            "name": "compute_cos",
+            "label":"compute cosinus",
+            "type": "BOOLEAN",
+            "defaultValue" : true,
+            "description": ""
+        },
+        {
+            "name": "compute_sin",
+            "label":"compute sinus",
+            "type": "BOOLEAN",
+            "defaultValue" : true,
+            "description": ""
+        },
+        {
+            "name": "compute_tan",
+            "label":"compute tan",
+            "type": "BOOLEAN",
+            "defaultValue" : false,
+            "description": ""
+        },
+        {
+            "name": "output_rag",
+            "label":"output the feature argument",
+            "type": "BOOLEAN",
+            "defaultValue" : false,
+            "description": ""
         }
     ]
 }
