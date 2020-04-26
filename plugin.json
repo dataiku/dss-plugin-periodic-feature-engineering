@@ -10,7 +10,19 @@
         "label": "Trigonometric transformation",
 
         // description: longer string to help end users understand what this plugin does
-        "description": "",
+        "description": "This processor allows to project a periodical column values in a reversed trigonometric circle. \
+Then you naturally get the argument of this column values on this reversed circle.\
+Cosinus, sinus and tangent of this argument are computed to that you can intuitively analyse their values. This features take your phenomenon periodicity into account.\
+The way to read the measure on the resulting trigonometric circle is then the same as the one to read a clock (it starts from the top and goes in the clockwise direction of roatation )\
+    Example of periodical columns : \
+    - 'Day of year' starts from 1 and goes toward 366 maximum : but the December 31st is really close to Janueary 1st.\
+        --> Once polarized day of year number 1 shoud have cos~0 and sin~1\
+        --> Once polarized day of year number 91 shoud have cos~1 and sin~0\
+        --> Once polarized day of year number 182 shoud have cos~0 and sin~-1\
+        --> Once polarized day of year number 273 shoud have cos~-1 and sin~0\
+        --> Once polarized day of year number 365 shoud have cos~0 and sin~1\
+    - 'Day of month' starts from 1 and goes toward 31 maximum : but the last day of a given month is really close to se first one of the next month.\
+    - 'Day of week' starts from 1 and goes toward 7 : but sunday really close to  monday.",
 
         "author": "Dataiku (Malick KONATE)",
 
