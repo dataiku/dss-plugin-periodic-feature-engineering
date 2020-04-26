@@ -14,7 +14,6 @@ def process(row):
     periodical_column_value = row[periodical_column_name]
     arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
     res = {}
-    
     if compute_cos:
         cos_name = periodical_column_name + "_cos"
         res[cos_name] = math.cos(arg_val)   
