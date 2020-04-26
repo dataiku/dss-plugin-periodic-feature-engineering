@@ -1,6 +1,8 @@
+import math
+import json
+
 def process(row):
-    import math
-    import json
+    
     periodical_column_name = params.get('periodical_column')
     periodical_column_value = row[periodical_column_name]
     column_period = params.get('column_period')
