@@ -2,7 +2,7 @@ import math
 import json
 
 def process(row):
-    
+    #Parameters import
     periodical_column_name = params.get('periodical_column')
     column_period = params.get('column_period')
     compute_cos = params.get('compute_cos')
