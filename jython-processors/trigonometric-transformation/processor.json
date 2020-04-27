@@ -27,7 +27,7 @@ Its result can be read over a trigonometric circle in the same way we read a clo
      * - ROW : the code outputs a row
      * - ROWS : the code outputs an array of rows
      */
-    "mode": "CELL",
+    "mode": "CELL",// replace by "ROW"
 
     /* params:
     DSS will generate a formular from this list of requested parameters.
