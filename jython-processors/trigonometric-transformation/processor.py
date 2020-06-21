@@ -18,7 +18,7 @@ def process(row):
     try:
         if compute_cos:
             cos_name = periodical_column_name + "_cos"
-            row[cos_name] = math.cos(arg_val)   
+            #row[cos_name] = math.cos(arg_val)   
         if compute_sin:
             sin_name = periodical_column_name + "_sin"
             row[sin_name] = math.sin(arg_val)
@@ -31,7 +31,7 @@ def process(row):
         error_message = ""
     except Exception as e:
         error_message = str(e)
-        
+    row[cos_name] = math.cos(arg_val)     
         
     #row['error_column_'] = error_message
     
