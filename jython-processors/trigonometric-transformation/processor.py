@@ -70,9 +70,7 @@ class TrigonometricTransformer():
             self.trigonometric_features['cos'][value] = self.trigonometric_transformer['cos'](value_argument)
             self.trigonometric_features['sin'][value] = self.trigonometric_transformer['sin'](value_argument)
             self.trigonometric_features['tan'][value] = self.trigonometric_transformer['tan'](value_argument)
-            
-            
-    
+               
 trigonometric_transformer = TrigonometricTransformer(L_choosed_functions=L_choosed_functions,
                                                      period=column_period,
                                                      process_as_time_dimension=process_as_time_dimension,
