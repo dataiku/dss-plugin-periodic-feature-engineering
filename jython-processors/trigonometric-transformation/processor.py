@@ -32,7 +32,8 @@ class TrigonometricTransformer():
     - 'compute_trigonometric_transform' : is a method allowing to map the dataset variable 
         to the functions set by the build_trigonometric_transformer() method.
     """
-    def __init__(self, L_choosed_functions, process_as_time_dimension):
+    def __init__(self, L_choosed_functions, process_as_time_dimension, ):
+        self.process_as_time_dimension = process_as_time_dimension
         self.L_choosed_functions = L_choosed_functions
         self.trigonometric_transformer = {}
         self.build_trigonometric_transformer(self.L_choosed_functions)
@@ -52,6 +53,8 @@ class TrigonometricTransformer():
         sin_val = self.trigonometric_transformer['sin'](argument)
         tan_val = self.trigonometric_transformer['tan'](argument)
         return cos_val, sin_val, tan_val
+    
+    self.
     
 trigonometric_transformer = TrigonometricTransformer(L_choosed_functions=L_choosed_functions)
 
