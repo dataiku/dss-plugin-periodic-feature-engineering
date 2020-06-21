@@ -26,7 +26,7 @@ def process(row):
             row[tan_name] = math.tan(arg_val)
         if output_arg:
             arg_name = periodical_column_name + "_arg"
-            row[arg_name] = periodical_column_value
+            row[arg_name] = periodical_column_name
         error_message = ""
     except Exception as e:
         error_message = str(e)
