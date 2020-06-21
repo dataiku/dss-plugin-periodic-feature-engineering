@@ -13,6 +13,10 @@ class TrigonometricTransformer():
         called by the TrigonometricTransformer() class.
     - 'compute_trigonometric_transform' : is a method allowing to map the dataset variable 
         to the functions set by the build_trigonometric_transformer() method.
+    - 'compute_argument' : is a methiod allowing to convert a numerical value from a 
+        periodical feature  into a trigonometric argument. 
+    - 'compute_trigonometric_features' : is a method allowing, if 'process_as_time_dimension==True', to 
+        pre-process all the possible cos/sin/tan associations of the given preriodical feature. 
     """
     def __init__(self, L_choosed_functions, period, process_as_time_dimension, range_period):
         self.L_choosed_functions = L_choosed_functions
