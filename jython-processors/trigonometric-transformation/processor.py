@@ -34,7 +34,7 @@ class TrigonometricTransformer():
     def __init__(self, L_choosed_functions):
         self.L_choosed_functions = L_choosed_functions
         self.trigonometric_transformer = {}
-        self.build_trigonometric_transformer( self.L_choosed_functions)
+        self.build_trigonometric_transformer(self.L_choosed_functions)
         pass
     
     def build_trigonometric_transformer(self, L_choosed_functions):
