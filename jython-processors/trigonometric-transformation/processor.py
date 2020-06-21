@@ -2,7 +2,7 @@ import math
 import json
 
 
-class TrigonometricTransformer():
+"""class TrigonometricTransformer():
     
     def __init__(self, params):
         self.params = params
@@ -10,7 +10,7 @@ class TrigonometricTransformer():
         pass
     def hello_world(self):
         pass
-
+"""
 #trigonometric_transformer = TrigonometricTransformer(params=params)
 
 def compute_trigonometric_features(L_computation, arg):
