@@ -47,6 +47,13 @@ Its result can be read over a trigonometric circle in the same way we read a clo
             "mandatory": true
         },
         {
+            "name": "is_time_dimension",
+            "label":"Is it a time dimension ?",
+            "type": "BOOLEAN",
+            "defaultValue" : true,
+            "description": ""
+        },
+        {
             "name": "column_period",
             "label":"column period",
             "type": "DOUBLE",
