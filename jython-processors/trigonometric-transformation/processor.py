@@ -24,13 +24,14 @@ class TrigonometricTransformer():
     
     def __init__(self, L_funcs_available, L_funcs_choices):
         #self.params = params
-        self.L_computables = L_computables
-        self.L_computation = L_computation
-        self.tr = 
+        self.L_funcs_available = L_funcs_available
+        self.L_funcs_choices = L_funcs_choices
+        self.trigonometric_transformer = None
+        self.build_trigonometric_transformer(self.L_funcs_available, self.L_funcs_available)
         self.sin_transformer = lambda x: math.sin(x)
         self.sin_transformer = lambda x: math.sin(x)
         pass
-    def build_trigonometric_transformer(self, L_computables, L_computation):
+    def build_trigonometric_transformer(self, L_funcs_available, L_funcs_available):
         for comp_func
         self.dict_trigonometric_transformer = {'cos': lambda x: math.cos(x),
                                                'sin': lambda x: math.sin(x),
