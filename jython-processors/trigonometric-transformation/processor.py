@@ -11,7 +11,10 @@ output_arg = params.get('output_arg')
 L_choosed_functions = [compute_cos, compute_sin, compute_tan]
 L_functions = ['cos', 'sin', 'tan']
 L_trigonometric_cols = []
-for choosed_funcs, 
+
+for choosed_function, function in zip(L_choosed_functions, L_functions):
+    if choosed_function :
+        L_trigonometric_cols.append(periodical_column_name+"_"+function)
 if compute_cos:
     cos_name = periodical_column_name + "_cos"
 if compute_sin:
