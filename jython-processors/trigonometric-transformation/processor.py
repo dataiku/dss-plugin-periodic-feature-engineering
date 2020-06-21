@@ -15,20 +15,22 @@ def process(row):
     orig_value = periodical_column_value
     arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
     dict_trigonometric_features = {}
+    
+    if compute_cos:
+        cos_name = periodical_column_name + "_cos"
+    if compute_sin:
+        sin_name = periodical_column_name + "_sin"
+    if compute_tan:
+        tan_name = periodical_column_name + "_tan"
+    if output_arg:
+        arg_name = periodical_column_name + "_arg"
     try:
-        if compute_cos:
-            cos_name = periodical_column_name + "_cos"
-            #row[cos_name] = math.cos(arg_val)   
-        if compute_sin:
-            sin_name = periodical_column_name + "_sin"
-            row[sin_name] = math.sin(arg_val)
-        if compute_tan:
-            tan_name = periodical_column_name + "_tan"
-            row[tan_name] = math.tan(arg_val)
-        if output_arg:
-            arg_name = periodical_column_name + "_arg"
-            row[arg_name] = arg_val
+        row[cos_name] = math.cos(arg_val)
+        row[sin_name] = math.sin(arg_val)
+        row[tan_name] = math.tan(arg_val)
+        row[arg_name] = arg_val
         error_message = ""
+        
     except Exception as e:
         error_message = str(e)
     row[cos_name] = math.cos(arg_val)     
