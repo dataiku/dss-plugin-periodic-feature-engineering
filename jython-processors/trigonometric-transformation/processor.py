@@ -21,6 +21,7 @@ def compute_trigonometric_features(L_computation, arg):
         cos_val = math.cos(arg_val)
     else:
         cos_val = None
+    return cos_val
     
 
 def process(row):
