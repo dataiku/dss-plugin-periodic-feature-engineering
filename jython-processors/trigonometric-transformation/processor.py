@@ -48,10 +48,10 @@ def process(row):
     try:
         arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
         cos_val, sin_val, tan_val = trigonometric_transformer.compute_trigonometric_transform(arg_val)
-        error_message = ""
+        log_message = None
         
     except Exception as e:
-        error_message = str(e)
+        log_message = "ERROR : "+str(e)
         arg_val, cos_val, sin_val, tan_val  = None, None, None, None
     
     L_values = [arg_val, cos_val, sin_val, tan_val]
@@ -60,7 +60,7 @@ def process(row):
         if value is not None:
             row[column] = value
         
-    row['error_message'] = error_message
+    row['trigonometric_log'] = log_message
     
     row[periodical_column_name] = periodical_column_value
     return row
