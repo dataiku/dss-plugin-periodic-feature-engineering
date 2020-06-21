@@ -12,6 +12,7 @@ def process(row):
     
     #Production code :
     periodical_column_value = row[periodical_column_name]
+    orig_value = periodical_column_value.copy()
     arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
     dict_trigonometric_features = {}
     try:
