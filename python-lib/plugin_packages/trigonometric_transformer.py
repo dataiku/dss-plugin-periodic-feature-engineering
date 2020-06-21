@@ -1,4 +1,4 @@
-
+import math
 #Class definition :
 class TrigonometricTransformer():
     """
