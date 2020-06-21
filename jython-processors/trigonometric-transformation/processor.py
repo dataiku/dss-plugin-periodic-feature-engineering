@@ -3,8 +3,8 @@ import math
 class TrigonometricTransformer():
     
     def __init__(self, params):
-        self.params = params
-        self.compute_cos = True
+        #self.params = params
+        self.compute_cos = params.get('compute_cos')
         pass
     def hello_world(self):
         pass
