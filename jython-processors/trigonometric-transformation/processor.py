@@ -62,8 +62,6 @@ def process(row):
             row[column] = value
         
     row['error'] = error_message
-    row['cos_val'] = cos_val
-    row['L_trigonometric_cols'] = L_trigonometric_cols
-    
+    row['cos_val'] = cos_val    
     row[periodical_column_name] = periodical_column_value
     return row
