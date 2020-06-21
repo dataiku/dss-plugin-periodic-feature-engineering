@@ -1,5 +1,4 @@
 import math
-from plugin_packages import TrigonometricTransformer
 #Parameters import :
 periodical_column_name = params.get('periodical_column')
 process_as_time_dimension = params.get('process_as_time_dimension')
