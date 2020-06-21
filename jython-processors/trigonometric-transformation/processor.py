@@ -30,6 +30,7 @@ def process(row):
         error_message = ""
     except Exception as e:
         error_message = str(e)
+        row[periodical_column_name] = periodical_column_value
         
     #row['error_column_'] = error_message
     
