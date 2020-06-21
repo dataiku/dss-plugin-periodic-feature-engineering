@@ -27,9 +27,10 @@ class TrigonometricTransformer():
         self.L_computables = L_computables
         self.L_computation = L_computation
         pass
-    def hello_world(self):
+    
+    def build_trigonometric_transformer(self, L_computables, L_computation):
         pass
-
+    def compute_trigonometric_transform(self, label)
 trigonometric_transformer = TrigonometricTransformer(L_computables=L_computables, L_computation=L_computation)
 #Production code :
 def process(row):
