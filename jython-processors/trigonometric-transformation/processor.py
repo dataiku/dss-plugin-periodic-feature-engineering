@@ -34,8 +34,7 @@ class TrigonometricTransformer():
     def build_trigonometric_transformer(self, L_computables, L_computation):
         self.dict_trigonometric_transformer = {'cos': lambda x: math.cos(x),
                                                'sin': lambda x: math.sin(x),
-                                               'tan': lambda x: math.tan(x)
-                                              }
+                                               'tan': lambda x: math.tan(x)}
         pass
     def compute_trigonometric_transform(self, label)
 trigonometric_transformer = TrigonometricTransformer(L_computables=L_computables, L_computation=L_computation)
