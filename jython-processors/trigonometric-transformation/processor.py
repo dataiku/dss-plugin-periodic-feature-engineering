@@ -56,11 +56,14 @@ def process(row):
         error_message = str(e)
         arg_val, cos_val, sin_val, tan_val  = None, None, None, None
     
-    for col in L_trigonometric_cols:
-        row[col] = arg_val
-    row[cos_name] = cos_val
-    row[sin_name] = sin_val
-    row[tan_name] = tan_val
+    L_values = [arg_val, cos_val, sin_val, tan_val]
+    
+    for column, value in zip(L_trigonometric_cols, L_values):
+        if value is not None:
+            row[column] = value
+    #row[cos_name] = cos_val
+    #row[sin_name] = sin_val
+    #row[tan_name] = tan_val
     
         
     row['error'] = error_message
