@@ -43,7 +43,7 @@ def process(row):
     row[tan_name] = tan_val
     
         
-    row['error_column_'] = error_message
+    row['error'] = error_message
     
     #return json.dumps(res)
     row[periodical_column_name] = periodical_column_value
