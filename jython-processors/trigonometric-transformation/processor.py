@@ -1,7 +1,12 @@
 import math
 import json
 
-def compute_trigonometric_features(L_computables, L)
+def compute_trigonometric_features(L_computation, arg):
+    compute_cos = L_computation[0]
+    compute_sin = L_computation[1]
+    compute_tan = L_computation[2]
+    
+    
 
 def process(row):
     #Parameters import :
@@ -17,7 +22,7 @@ def process(row):
     orig_value = periodical_column_value
     
     #L_computables = ['cos', 'sin', 'tan']
-    L_selection = [compute_cos, compute_sin, compute_tan]
+    L_computation = [compute_cos, compute_sin, compute_tan]
     
     if compute_cos:
         cos_name = periodical_column_name + "_cos"
