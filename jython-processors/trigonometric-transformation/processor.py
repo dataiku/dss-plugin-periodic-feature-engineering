@@ -2,6 +2,7 @@ import math
 
 #Parameters import :
 periodical_column_name = params.get('periodical_column')
+is_time_dimension = params.get('is_time_dimension')
 column_period = params.get('column_period')
 compute_cos = params.get('compute_cos')
 compute_sin = params.get('compute_sin')
