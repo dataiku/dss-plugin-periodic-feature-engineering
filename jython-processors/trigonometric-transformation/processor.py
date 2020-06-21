@@ -1,11 +1,7 @@
 import math
 import json
 
-def label_columns(periodical_column_name, parameter, pref_or_suff):
-    if pref_or_suff == 'suffix':
-        return periodical_column_name + "_" + parameter
-    else:
-        return parameter + "_" + periodical_column_name
+
 
 def process(row):
     #Parameters import :
@@ -22,14 +18,14 @@ def process(row):
     
     L_computables = ['cos', 'sin', 'tan']
     L_selection = [compute_cos, compute_sin, compute_tan]
-    """if compute_cos:
+    if compute_cos:
         cos_name = periodical_column_name + "_cos"
     if compute_sin:
         sin_name = periodical_column_name + "_sin"
     if compute_tan:
         tan_name = periodical_column_name + "_tan"
     if output_arg:
-        arg_name = periodical_column_name + "_arg""""
+        arg_name = periodical_column_name + "_arg
     try:
         arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
         cos_val = math.cos(arg_val)
