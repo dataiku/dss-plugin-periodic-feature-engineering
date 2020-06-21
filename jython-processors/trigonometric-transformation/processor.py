@@ -31,8 +31,6 @@ def process(row):
     except Exception as e:
         error_message = str(e)
         
-        
-    row['trigonometric_features'] = dict_trigonometric_features
     #row['error_column_'] = error_message
     
     #return json.dumps(res)
