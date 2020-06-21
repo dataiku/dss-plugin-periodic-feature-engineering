@@ -35,7 +35,7 @@ class TrigonometricTransformer():
     """
     def __init__(self, L_choosed_functions, process_as_time_dimension, range_period):
         self.process_as_time_dimension = process_as_time_dimension
-        self.period = 
+        self.range_period = range_period
         self.L_choosed_functions = L_choosed_functions
         self.trigonometric_transformer = {}
         self.build_trigonometric_transformer(self.L_choosed_functions)
@@ -56,7 +56,7 @@ class TrigonometricTransformer():
         tan_val = self.trigonometric_transformer['tan'](argument)
         return cos_val, sin_val, tan_val
     
-    self.
+    def compute_
     
 trigonometric_transformer = TrigonometricTransformer(L_choosed_functions=L_choosed_functions,
                                                      process_as_time_dimension=process_as_time_dimension,
