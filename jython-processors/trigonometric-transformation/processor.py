@@ -1,5 +1,15 @@
 import math
 
+class TrigonometricTransformer():
+    
+    def __init__(self, params):
+        self.params = params
+        self.compute_cos = True
+        pass
+    def hello_world(self):
+        pass
+
+trigonometric_transformer = TrigonometricTransformer(params=params)
 def process(row):
     #Parameters import :
     periodical_column_name = params.get('periodical_column')
