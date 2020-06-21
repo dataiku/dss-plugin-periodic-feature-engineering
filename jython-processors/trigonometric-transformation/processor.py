@@ -18,8 +18,15 @@ for choosed_function, function in zip(L_choosed_functions, L_functions):
     if choosed_function :
         L_trigonometric_cols.append(periodical_column_name+"_"+function)
 
-#Class definition :        
+#Class definition :
 class TrigonometricTransformer():
+    """
+    The TrigonometricTransformer's goal is to set up all the functions
+    that will be called by the recipe's processor. 
+    These functions are defined as lambdas functions contextualized by the end
+    user's selection. 
+    This way the condition in order to compute the asked functions is checked only once.
+    """
     def __init__(self, L_choosed_functions):
         self.L_choosed_functions = L_choosed_functions
         self.trigonometric_transformer = {}
