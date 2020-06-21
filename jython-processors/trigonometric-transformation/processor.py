@@ -13,7 +13,8 @@ import json
 """
 #trigonometric_transformer = TrigonometricTransformer(params=params)
 
-"""def compute_trigonometric_features(L_computation, arg):
+"""
+def compute_trigonometric_features(L_computation, arg):
     compute_cos = L_computation[0]
     compute_sin = L_computation[1]
     compute_tan = L_computation[2]
@@ -22,7 +23,7 @@ import json
     else:
         cos_val = None
     return cos_val
-    """
+"""
 
 def process(row):
     #Parameters import :
