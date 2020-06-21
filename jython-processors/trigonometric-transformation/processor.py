@@ -8,8 +8,10 @@ compute_sin = params.get('compute_sin')
 compute_tan = params.get('compute_tan')
 output_arg = params.get('output_arg')
 
-L_funcs_choices = [compute_cos, compute_sin, compute_tan]
-
+L_choosed_functions = [compute_cos, compute_sin, compute_tan]
+L_functions = ['cos', 'sin', 'tan']
+L_trigonometric_cols = []
+for choosed_funcs, 
 if compute_cos:
     cos_name = periodical_column_name + "_cos"
 if compute_sin:
@@ -20,16 +22,16 @@ if output_arg:
     arg_name = periodical_column_name + "_arg"
         
 class TrigonometricTransformer():
-    def __init__(self, L_funcs_choices):
-        self.L_funcs_choices = L_funcs_choices
+    def __init__(self, L_choosed_functions):
+        self.L_choosed_functions = L_choosed_functions
         self.trigonometric_transformer = {}
-        self.build_trigonometric_transformer( self.L_funcs_choices)
+        self.build_trigonometric_transformer( self.L_choosed_functions)
         pass
     
-    def build_trigonometric_transformer(self, L_funcs_choices):
-        cos_choosed = L_funcs_choices[0]
-        sin_choosed = L_funcs_choices[1]
-        tan_choosed = L_funcs_choices[2]
+    def build_trigonometric_transformer(self, L_choosed_functions):
+        cos_choosed = L_choosed_functions[0]
+        sin_choosed = L_choosed_functions[1]
+        tan_choosed = L_choosed_functions[2]
         self.trigonometric_transformer = {'cos': lambda x: math.cos(x) if cos_choosed else None,
                                           'sin': lambda x: math.sin(x) if sin_choosed else None,
                                           'tan': lambda x: math.tan(x) if tan_choosed else None}
@@ -41,7 +43,7 @@ class TrigonometricTransformer():
         tan_val = self.trigonometric_transformer['tan'](argument)
         return cos_val, sin_val, tan_val
     
-trigonometric_transformer = TrigonometricTransformer(L_funcs_choices=L_funcs_choices)
+trigonometric_transformer = TrigonometricTransformer(L_choosed_functions=L_choosed_functions)
 
 #Production code :
 def process(row):
