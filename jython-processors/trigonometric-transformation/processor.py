@@ -20,6 +20,7 @@ def process(row):
     periodical_column_value = row[periodical_column_name]
     orig_value = periodical_column_value
     
+    L_computables = ['cos', 'sin', 'tan']
     if compute_cos:
         cos_name = periodical_column_name + "_cos"
     if compute_sin:
