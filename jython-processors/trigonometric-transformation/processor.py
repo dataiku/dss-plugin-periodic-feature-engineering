@@ -13,7 +13,7 @@ def process(row):
     #Production code :
     periodical_column_value = row[periodical_column_name]    
     #L_computables = ['cos', 'sin', 'tan']
-    L_computation = [compute_cos, compute_sin, compute_tan]
+    #L_computation = [compute_cos, compute_sin, compute_tan]
     
     if compute_cos:
         cos_name = periodical_column_name + "_cos"
