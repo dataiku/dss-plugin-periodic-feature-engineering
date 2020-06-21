@@ -60,7 +60,7 @@ def process(row):
         if value is not None:
             row[column] = value
         
-    row['error'] = error_message
+    row['error_message'] = error_message
     
     row[periodical_column_name] = periodical_column_value
     return row
