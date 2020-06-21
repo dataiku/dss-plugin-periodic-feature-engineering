@@ -84,6 +84,7 @@ trigonometric_transformer = TrigonometricTransformer(L_choosed_functions=L_choos
                                                      range_period=range_period)
 
 trigonometric_features = trigonometric_transformer.trigonometric_features
+
 #Production code :
 def process(row):
     periodical_column_value = row[periodical_column_name]    
