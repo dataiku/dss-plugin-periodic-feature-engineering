@@ -5,6 +5,7 @@ import json
 class TrigonometricTransformer():
     
     def __init__(self, params):
+        self.params = params
         self.compute_cos = True
         pass
     
