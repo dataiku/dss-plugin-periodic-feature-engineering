@@ -26,14 +26,15 @@ def process(row):
     try:
         arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
         cos_val = math.cos(arg_val)
-        row[sin_name] = math.sin(arg_val)
+         = math.sin(arg_val)
         row[tan_name] = math.tan(arg_val)
         row[arg_name] = arg_val
         error_message = ""
         
     except Exception as e:
         error_message = str(e)
-    row[cos_name] = cos_val    
+    row[cos_name] = cos_val
+    row[sin_name] = sin_val
         
     #row['error_column_'] = error_message
     
