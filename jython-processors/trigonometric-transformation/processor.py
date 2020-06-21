@@ -32,7 +32,7 @@ class TrigonometricTransformer():
     - 'compute_trigonometric_transform' : is a method allowing to map the dataset variable 
         to the functions set by the build_trigonometric_transformer() method.
     """
-    def __init__(self, L_choosed_functions):
+    def __init__(self, L_choosed_functions, process_as_time_dimension):
         self.L_choosed_functions = L_choosed_functions
         self.trigonometric_transformer = {}
         self.build_trigonometric_transformer(self.L_choosed_functions)
