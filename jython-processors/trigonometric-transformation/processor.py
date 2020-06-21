@@ -10,7 +10,6 @@ output_arg = params.get('output_arg')
 L_choosed_functions = [compute_cos, compute_sin, compute_tan]
 L_functions = ['cos', 'sin', 'tan']
 L_trigonometric_cols = []
-phase_shift = -1 * math.pi
 
 if output_arg:
     L_trigonometric_cols.append(periodical_column_name + "_arg")
@@ -48,7 +47,7 @@ trigonometric_transformer = TrigonometricTransformer(L_choosed_functions=L_choos
 def process(row):
     periodical_column_value = row[periodical_column_name]    
     try:
-        arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)+phase_shift
+        arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
         cos_val, sin_val, tan_val = trigonometric_transformer.compute_trigonometric_transform(arg_val)
         error_message = ""
         
