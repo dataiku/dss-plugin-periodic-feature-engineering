@@ -1,6 +1,12 @@
 import math
 import json
 
+def label_columns(periodical_column_name, parameter, pref_or_suff):
+    if pref_or_suff == 'suffix':
+        return periodical_column_name + "_" + parameter
+    else:
+        return parameter + "_" + periodical_column_name
+
 def process(row):
     #Parameters import :
     periodical_column_name = params.get('periodical_column')
@@ -13,7 +19,6 @@ def process(row):
     #Production code :
     periodical_column_value = row[periodical_column_name]
     orig_value = periodical_column_value
-    
     
     if compute_cos:
         cos_name = periodical_column_name + "_cos"
@@ -36,7 +41,7 @@ def process(row):
         cos_val = None
         sin_val = None
         tan_val = None
-        
+    
     row[arg_name] = arg_val
     row[cos_name] = cos_val
     row[sin_name] = sin_val
