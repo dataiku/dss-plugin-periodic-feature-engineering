@@ -33,7 +33,7 @@ def process(row):
         
         
     row['trigonometric_features'] = dict_trigonometric_features
-    row['error_column_'] = error_message
+    #row['error_column_'] = error_message
     
     #return json.dumps(res)
     return row
