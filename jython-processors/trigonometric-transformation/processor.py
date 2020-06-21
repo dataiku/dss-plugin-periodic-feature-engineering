@@ -63,7 +63,6 @@ def process(row):
         
     row['error'] = error_message
     row['cos_val'] = cos_val
-    row['i'] = i
     
     row[periodical_column_name] = periodical_column_value
     return row
