@@ -11,7 +11,7 @@ class TrigonometricTransformer():
     def hello_world(self):
         pass
 
-trigonometric_transformer = TrigonometricTransformer(params=params)
+#trigonometric_transformer = TrigonometricTransformer(params=params)
 
 def compute_trigonometric_features(L_computation, arg):
     compute_cos = L_computation[0]
