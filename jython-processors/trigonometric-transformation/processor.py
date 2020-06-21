@@ -42,6 +42,7 @@ class TrigonometricTransformer():
         self.build_trigonometric_transformer(self.L_choosed_functions)
         self.trigonometric_features = {'cos':{}, 'sin':{}, 'tan':{}}
         if self.process_as_time_dimension:
+            self.compute_trigonometric_features()
             
         pass
     
@@ -71,6 +72,7 @@ class TrigonometricTransformer():
             
     
 trigonometric_transformer = TrigonometricTransformer(L_choosed_functions=L_choosed_functions,
+                                                     period=column_period
                                                      process_as_time_dimension=process_as_time_dimension,
                                                      range_period=range_period)
 
