@@ -49,7 +49,6 @@ def process(row):
     try:
         arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
         cos_val, sin_val, tan_val = trigonometric_transformer.compute_trigonometric_transform(arg_val)
-
         error_message = ""
         
     except Exception as e:
