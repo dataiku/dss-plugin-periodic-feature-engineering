@@ -13,7 +13,6 @@ def process(row):
     #Production code :
     periodical_column_value = row[periodical_column_name]
     arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
-    res = {}
     dict_trigonometric_features = {}
     try:
         if compute_cos:
@@ -33,8 +32,8 @@ def process(row):
         error_message = str(e)
         
         
-    res['trigonometric_features'] = dict_trigonometric_features
-    res['error_message'] = error_message
+    row['trigonometric_features'] = dict_trigonometric_features
+    row['error_message'] = error_message
     
     #return json.dumps(res)
-    return res
+    return row
