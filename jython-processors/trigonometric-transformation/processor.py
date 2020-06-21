@@ -1,5 +1,6 @@
 import math
 
+#Parameters import :
 periodical_column_name = params.get('periodical_column')
 column_period = params.get('column_period')
 compute_cos = params.get('compute_cos')
@@ -21,31 +22,21 @@ if output_arg:
         
 class TrigonometricTransformer():
     
-    def __init__(self, params):
+    def __init__(self, L_computables, L_computation):
         #self.params = params
-        self.compute_cos = params.get('compute_cos')
+        self.L_computables = L_computables
+        self.L_computation = L_computation
         pass
     def hello_world(self):
         pass
 
 trigonometric_transformer = TrigonometricTransformer(params=params)
+#Production code :
 def process(row):
-    #Parameters import :
-    """periodical_column_name = params.get('periodical_column')
-    column_period = params.get('column_period')
-    #compute_cos = params.get('compute_cos')
-    compute_cos = trigonometric_transformer.compute_cos
-    compute_sin = params.get('compute_sin')
-    compute_tan = params.get('compute_tan')
-    output_arg = params.get('output_arg')"""
+
     
-    #Production code :
     periodical_column_value = row[periodical_column_name]    
-    #L_computables = ['cos', 'sin', 'tan']
-    #L_computation = [compute_cos, compute_sin, compute_tan]
-    
-    
-    
+
     try:
         arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
         cos_val = math.cos(arg_val)
