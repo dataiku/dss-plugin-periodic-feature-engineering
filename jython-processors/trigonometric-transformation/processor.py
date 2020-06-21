@@ -30,7 +30,7 @@ class TrigonometricTransformer():
     def hello_world(self):
         pass
 
-trigonometric_transformer = TrigonometricTransformer(params=params)
+trigonometric_transformer = TrigonometricTransformer(L_computables=L_computables, L_computation=L_computation)
 #Production code :
 def process(row):
 
