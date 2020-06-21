@@ -17,7 +17,6 @@ if output_arg:
 for choosed_function, function in zip(L_choosed_functions, L_functions):
     if choosed_function :
         L_trigonometric_cols.append(periodical_column_name+"_"+function)
-
         
 class TrigonometricTransformer():
     def __init__(self, L_choosed_functions):
