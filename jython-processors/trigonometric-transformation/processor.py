@@ -96,7 +96,7 @@ def process(row):
             row[column] = value
         
     row['trigonometric_log'] = log_message
-    row['cos_features'] = trigonometric_transformer.trigonometric_features['cos']
+    #row['cos_features'] = trigonometric_transformer.trigonometric_features['cos']
     
     row[periodical_column_name] = periodical_column_value
     return row
