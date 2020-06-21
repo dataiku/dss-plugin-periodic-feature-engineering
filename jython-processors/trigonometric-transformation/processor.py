@@ -4,7 +4,7 @@ import math
 periodical_column_name = params.get('periodical_column')
 is_time_dimension = params.get('process_as_time_dimension')
 column_period = params.get('column_period')
-period_range = range(int(column_period+2))
+range_period = range(int(column_period+2))
 compute_cos = params.get('compute_cos')
 compute_sin = params.get('compute_sin')
 compute_tan = params.get('compute_tan')
@@ -33,7 +33,7 @@ class TrigonometricTransformer():
     - 'compute_trigonometric_transform' : is a method allowing to map the dataset variable 
         to the functions set by the build_trigonometric_transformer() method.
     """
-    def __init__(self, L_choosed_functions, process_as_time_dimension, time_period):
+    def __init__(self, L_choosed_functions, process_as_time_dimension, range_period):
         self.process_as_time_dimension = process_as_time_dimension
         self.period = 
         self.L_choosed_functions = L_choosed_functions
@@ -58,7 +58,9 @@ class TrigonometricTransformer():
     
     self.
     
-trigonometric_transformer = TrigonometricTransformer(L_choosed_functions=L_choosed_functions)
+trigonometric_transformer = TrigonometricTransformer(L_choosed_functions=L_choosed_functions,
+                                                     process_as_time_dimension=process_as_time_dimension,
+                                                     range_period=range_period)
 
 #Production code :
 def process(row):
