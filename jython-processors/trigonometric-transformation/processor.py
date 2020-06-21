@@ -46,16 +46,12 @@ class TrigonometricTransformer():
 trigonometric_transformer = TrigonometricTransformer(L_funcs_choices=L_funcs_choices)
 #Production code :
 def process(row):
-
-    
     periodical_column_value = row[periodical_column_name]    
 
     try:
         arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
         cos_val, sin_val, tan_val = trigonometric_transformer.compute_trigonometric_transform(arg_val)
-        #cos_val = math.cos(arg_val)
-        #sin_val = math.sin(arg_val)
-        #tan_val = math.tan(arg_val)
+
         error_message = ""
         
     except Exception as e:
