@@ -80,6 +80,13 @@ Its result can be read over a trigonometric circle in the same way we read a clo
             "type": "BOOLEAN",
             "defaultValue" : false,
             "description": ""
+        },
+        {
+            "name": "error_column",
+            "label": "Error__ column",
+            "type": "COLUMN",
+            "description": "Output for python exception message",
+            "columnRole": "output_error"
         }
     ]
 }
