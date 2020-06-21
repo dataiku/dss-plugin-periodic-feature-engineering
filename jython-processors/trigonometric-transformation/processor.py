@@ -7,6 +7,9 @@ compute_sin = params.get('compute_sin')
 compute_tan = params.get('compute_tan')
 output_arg = params.get('output_arg')
 
+L_computables = ['cos', 'sin', 'tan']
+L_computation = [compute_cos, compute_sin, compute_tan]
+
 if compute_cos:
     cos_name = periodical_column_name + "_cos"
 if compute_sin:
