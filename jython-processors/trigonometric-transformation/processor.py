@@ -81,7 +81,12 @@ def process(row):
     periodical_column_value = row[periodical_column_name]    
     try:
         arg_val = trigonometric_transformer.compute_argument(periodical_column_value)
-        cos_val, sin_val, tan_val = trigonometric_transformer.compute_trigonometric_transform(arg_val)
+        if process_as_time_dimension:
+            cos_val = trigonometric_transformer.trigonometric_features['cos'][periodical_column_value]
+            sin_val = trigonometric_transformer.trigonometric_features['sin'][periodical_column_value]
+            tan_val = trigonometric_transformer.trigonometric_features['sin'][periodical_column_value]
+        else:
+            cos_val, sin_val, tan_val = trigonometric_transformer.compute_trigonometric_transform(arg_val)
         log_message = None
         
     except Exception as e:
