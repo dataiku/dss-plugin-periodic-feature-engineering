@@ -22,7 +22,7 @@ def process(row):
     if compute_tan:
         tan_name = periodical_column_name + "_tan"
     if output_arg:
-        arg_name = periodical_column_name + "_arg
+        arg_name = periodical_column_name + "_arg"
     
     try:
         arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
