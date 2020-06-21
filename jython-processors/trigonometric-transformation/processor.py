@@ -45,7 +45,7 @@ class TrigonometricTransformer():
         tan_val = self.trigonometric_transformer['tan'](argument)
         return cos_val, sin_val, tan_val
     
-trigonometric_transformer = TrigonometricTransformer(L_funcs_available=L_funcs_available, L_funcs_choices=L_funcs_choices)
+trigonometric_transformer = TrigonometricTransformer(L_funcs_choices=L_funcs_choices)
 #Production code :
 def process(row):
 
