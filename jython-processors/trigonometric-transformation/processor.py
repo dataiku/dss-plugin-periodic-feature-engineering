@@ -20,7 +20,6 @@ if output_arg:
     arg_name = periodical_column_name + "_arg"
         
 class TrigonometricTransformer():
-    
     def __init__(self, L_funcs_choices):
         self.L_funcs_choices = L_funcs_choices
         self.trigonometric_transformer = {}
