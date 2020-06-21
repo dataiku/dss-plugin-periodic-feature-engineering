@@ -60,9 +60,6 @@ def process(row):
     for column, value in zip(L_trigonometric_cols, L_values):
         if value is not None:
             row[column] = value
-    #row[cos_name] = cos_val
-    #row[sin_name] = sin_val
-    #row[tan_name] = tan_val
         
     row['error'] = error_message
     row['cos_val'] = cos_val
