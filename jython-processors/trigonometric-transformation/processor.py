@@ -64,7 +64,6 @@ def process(row):
     #row[cos_name] = cos_val
     #row[sin_name] = sin_val
     #row[tan_name] = tan_val
-    
         
     row['error'] = error_message
     
