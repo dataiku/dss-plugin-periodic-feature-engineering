@@ -75,6 +75,7 @@ trigonometric_transformer = TrigonometricTransformer(L_choosed_functions=L_choos
                                                      period=column_period,
                                                      process_as_time_dimension=process_as_time_dimension,
                                                      range_period=range_period)
+
 trigonometric_features = trigonometric_transformer.trigonometric_features
 #Production code :
 def process(row):
