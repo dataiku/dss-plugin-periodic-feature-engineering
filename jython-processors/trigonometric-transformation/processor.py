@@ -36,6 +36,7 @@ class TrigonometricTransformer():
                                               'sin': lambda x: math.sin(x) if choosed else None,
                                               'tan': lambda x: math.tan(x) if choosed else None}
         pass
+    
     def compute_trigonometric_transform(self, argument):
         cos_val = self.trigonometric_transformer['cos'](argument)
         sin_val = self.trigonometric_transformer['sin'](argument)
