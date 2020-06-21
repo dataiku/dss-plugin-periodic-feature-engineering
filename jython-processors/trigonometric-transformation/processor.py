@@ -26,9 +26,16 @@ class TrigonometricTransformer():
         #self.params = params
         self.L_computables = L_computables
         self.L_computation = L_computation
+        self.tr = 
+        self.sin_transformer = lambda x: math.sin(x)
+        self.sin_transformer = lambda x: math.sin(x)
         pass
     
     def build_trigonometric_transformer(self, L_computables, L_computation):
+        self.dict_trigonometric_transformer = {'cos': lambda x: math.cos(x),
+                                               'sin': lambda x: math.sin(x),
+                                               'tan': lambda x: math.tan(x)
+                                              }
         pass
     def compute_trigonometric_transform(self, label)
 trigonometric_transformer = TrigonometricTransformer(L_computables=L_computables, L_computation=L_computation)
