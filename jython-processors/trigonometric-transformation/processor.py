@@ -56,7 +56,8 @@ def process(row):
         error_message = str(e)
         arg_val, cos_val, sin_val, tan_val  = None, None, None, None
     
-    row[arg_name] = arg_val
+    for col in L_trigonometric_cols:
+        row[col] = arg_val
     row[cos_name] = cos_val
     row[sin_name] = sin_val
     row[tan_name] = tan_val
