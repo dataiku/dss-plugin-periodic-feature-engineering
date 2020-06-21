@@ -66,7 +66,10 @@ class TrigonometricTransformer():
     
     def compute_trigonometric_features(self):
         for value in self.range_period:
-            self.trigonometric_transformer['cos'](argument)
+            value_argument = self.compute_argument(value)
+            self.trigonometric_features['cos'][value] = self.trigonometric_transformer['cos'](value_argument)
+            self.trigonometric_features['sin'][value] = self.trigonometric_transformer['sin'](value_argument)
+            self.trigonometric_features['tan'][value] = self.trigonometric_transformer['tan'](value_argument)
             
             
     
