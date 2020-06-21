@@ -47,7 +47,7 @@ trigonometric_transformer = TrigonometricTransformer(L_choosed_functions=L_choos
 def process(row):
     periodical_column_value = row[periodical_column_name]    
     try:
-        arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)+math.pi
+        arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
         cos_val, sin_val, tan_val = trigonometric_transformer.compute_trigonometric_transform(arg_val)
         error_message = ""
         
