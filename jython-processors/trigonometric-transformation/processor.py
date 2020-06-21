@@ -27,11 +27,11 @@ class TrigonometricTransformer():
         self.L_funcs_available = L_funcs_available
         self.L_funcs_choices = L_funcs_choices
         self.trigonometric_transformer = None
-        self.build_trigonometric_transformer(self.L_funcs_available, self.L_funcs_available)
+        self.build_trigonometric_transformer(self.L_funcs_available, self.L_funcs_choices)
         pass
     
-    def build_trigonometric_transformer(self, L_funcs_available, L_funcs_available):
-        for comp_func
+    def build_trigonometric_transformer(self, L_funcs_available, L_funcs_choices):
+        for func_available, choice in zip(L_funcs_available, L_funcs_choices) 
         self.dict_trigonometric_transformer = {'cos': lambda x: math.cos(x),
                                                'sin': lambda x: math.sin(x),
                                                'tan': lambda x: math.tan(x)}
