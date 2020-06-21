@@ -37,3 +37,4 @@ def process(row):
     res['error_message'] = error_message
     
     #return json.dumps(res)
+    return res
