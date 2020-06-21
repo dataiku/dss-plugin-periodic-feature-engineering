@@ -52,9 +52,10 @@ def process(row):
 
     try:
         arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
-        cos_val = math.cos(arg_val)
-        sin_val = math.sin(arg_val)
-        tan_val = math.tan(arg_val)
+        cos_val, sin_val, tan_val = trigonometric_transformer.compute_trigonometric_transform(arg_val)
+        #cos_val = math.cos(arg_val)
+        #sin_val = math.sin(arg_val)
+        #tan_val = math.tan(arg_val)
         error_message = ""
         
     except Exception as e:
