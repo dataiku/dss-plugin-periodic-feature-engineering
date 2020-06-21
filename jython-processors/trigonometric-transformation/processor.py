@@ -66,6 +66,7 @@ def process(row):
     #row[tan_name] = tan_val
         
     row['error'] = error_message
+    row['L_trigonometric_cols'] = L_trigonometric_cols
     
     row[periodical_column_name] = periodical_column_value
     return row
