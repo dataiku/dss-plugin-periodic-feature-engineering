@@ -12,17 +12,13 @@ L_choosed_functions = [compute_cos, compute_sin, compute_tan]
 L_functions = ['cos', 'sin', 'tan']
 L_trigonometric_cols = []
 
+if output_arg:
+    L_trigonometric_cols.append(periodical_column_name + "_arg")
+    
 for choosed_function, function in zip(L_choosed_functions, L_functions):
     if choosed_function :
         L_trigonometric_cols.append(periodical_column_name+"_"+function)
-if compute_cos:
-    cos_name = periodical_column_name + "_cos"
-if compute_sin:
-    sin_name = periodical_column_name + "_sin"
-if compute_tan:
-    tan_name = periodical_column_name + "_tan"
-if output_arg:
-    arg_name = periodical_column_name + "_arg"
+
         
 class TrigonometricTransformer():
     def __init__(self, L_choosed_functions):
