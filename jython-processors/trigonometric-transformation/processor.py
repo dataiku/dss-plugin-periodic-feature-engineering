@@ -2,7 +2,8 @@ import math
 import json
 
 
-"""class TrigonometricTransformer():
+"""
+class TrigonometricTransformer():
     
     def __init__(self, params):
         self.params = params
