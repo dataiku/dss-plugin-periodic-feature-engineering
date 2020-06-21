@@ -1,29 +1,5 @@
 import math
 
-"""
-class TrigonometricTransformer():
-    
-    def __init__(self, params):
-        self.params = params
-        self.compute_cos = True
-        pass
-    def hello_world(self):
-        pass
-"""
-#trigonometric_transformer = TrigonometricTransformer(params=params)
-
-"""
-def compute_trigonometric_features(L_computation, arg):
-    compute_cos = L_computation[0]
-    compute_sin = L_computation[1]
-    compute_tan = L_computation[2]
-    if compute_cos:
-        cos_val = math.cos(arg_val)
-    else:
-        cos_val = None
-    return cos_val
-"""
-
 def process(row):
     #Parameters import :
     periodical_column_name = params.get('periodical_column')
