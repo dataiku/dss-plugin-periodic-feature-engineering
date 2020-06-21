@@ -15,7 +15,7 @@ def process(row):
     #L_computables = ['cos', 'sin', 'tan']
     #L_computation = [compute_cos, compute_sin, compute_tan]
     
-    if compute_cos:
+    """if compute_cos:
         cos_name = periodical_column_name + "_cos"
     if compute_sin:
         sin_name = periodical_column_name + "_sin"
@@ -46,5 +46,5 @@ def process(row):
         
     row['error'] = error_message
     
-    row[periodical_column_name] = periodical_column_value
+    row[periodical_column_name] = periodical_column_value"""
     return row
