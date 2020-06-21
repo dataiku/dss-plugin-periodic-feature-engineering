@@ -45,6 +45,5 @@ def process(row):
         
     row['error'] = error_message
     
-    #return json.dumps(res)
     row[periodical_column_name] = periodical_column_value
     return row
