@@ -72,7 +72,7 @@ class TrigonometricTransformer():
             
     
 trigonometric_transformer = TrigonometricTransformer(L_choosed_functions=L_choosed_functions,
-                                                     period=column_period
+                                                     period=column_period,
                                                      process_as_time_dimension=process_as_time_dimension,
                                                      range_period=range_period)
 
