@@ -62,7 +62,7 @@ class TrigonometricTransformer():
         return cos_val, sin_val, tan_val
     
     def compute_argument(self, value):
-        return math.pi/2.0-(math.pi*int(value))/(self.period/2.0)
+        return math.pi/2.0-(math.pi*value)/(self.period/2.0)
     
     def compute_trigonometric_features(self):
         for value in self.range_period:
@@ -80,6 +80,7 @@ trigonometric_transformer = TrigonometricTransformer(L_choosed_functions=L_choos
 def process(row):
     periodical_column_value = row[periodical_column_name]    
     try:
+        periodical_column_value = int(periodical_column_value)
         arg_val = trigonometric_transformer.compute_argument(periodical_column_value)
         if process_as_time_dimension:
             cos_val = trigonometric_transformer.trigonometric_features['cos'][periodical_column_value]
