@@ -11,9 +11,7 @@ def process(row):
     output_arg = params.get('output_arg')
     
     #Production code :
-    periodical_column_value = row[periodical_column_name]
-    orig_value = periodical_column_value
-    
+    periodical_column_value = row[periodical_column_name]    
     #L_computables = ['cos', 'sin', 'tan']
     L_computation = [compute_cos, compute_sin, compute_tan]
     
