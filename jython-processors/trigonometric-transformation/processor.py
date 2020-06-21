@@ -13,8 +13,7 @@ def process(row):
     #Production code :
     periodical_column_value = row[periodical_column_name]
     orig_value = periodical_column_value
-    arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
-    dict_trigonometric_features = {}
+    
     
     if compute_cos:
         cos_name = periodical_column_name + "_cos"
@@ -25,7 +24,8 @@ def process(row):
     if output_arg:
         arg_name = periodical_column_name + "_arg"
     try:
-        row[cos_name] = math.cos(arg_val)
+        arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
+        cos_val = math.cos(arg_val)
         row[sin_name] = math.sin(arg_val)
         row[tan_name] = math.tan(arg_val)
         row[arg_name] = arg_val
@@ -33,7 +33,7 @@ def process(row):
         
     except Exception as e:
         error_message = str(e)
-    row[cos_name] = math.cos(arg_val)     
+    row[cos_name] = cos_val    
         
     #row['error_column_'] = error_message
     
