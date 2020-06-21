@@ -17,7 +17,9 @@ class TrigonometricTransformer():
         periodical feature  into a trigonometric argument. 
     - 'compute_trigonometric_features' : is a method allowing, if 'process_as_time_dimension==True', to 
         pre-process all the possible cos/sin/tan associations of the given preriodical feature. 
-        This is a good way to avoid repetitive computations of these values from rows to rows. 
+        This is a good way to avoid repetitive computations of these values from rows to rows;
+        Instead we do some lookups from the periodical feature values to the pre-computed values 
+        of its cos/sin/tan.
     """
     def __init__(self, L_choosed_functions, period, process_as_time_dimension, range_period):
         self.L_choosed_functions = L_choosed_functions
