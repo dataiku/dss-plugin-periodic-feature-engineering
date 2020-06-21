@@ -2,7 +2,7 @@ import math
 
 #Parameters import :
 periodical_column_name = params.get('periodical_column')
-is_time_dimension = params.get('process_as_time_dimension')
+process_as_time_dimension = params.get('process_as_time_dimension')
 column_period = params.get('column_period')
 range_period = range(int(column_period+2))
 compute_cos = params.get('compute_cos')
