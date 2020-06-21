@@ -44,6 +44,7 @@ class TrigonometricTransformer():
         return cos_val, sin_val, tan_val
     
 trigonometric_transformer = TrigonometricTransformer(L_funcs_choices=L_funcs_choices)
+
 #Production code :
 def process(row):
     periodical_column_value = row[periodical_column_name]    
