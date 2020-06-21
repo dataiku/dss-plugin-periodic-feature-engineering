@@ -27,7 +27,7 @@ def process(row):
     periodical_column_name = params.get('periodical_column')
     column_period = params.get('column_period')
     compute_cos = params.get('compute_cos')
-    compute_cos = trigonometric_transformer.compute_cos
+    #compute_cos = trigonometric_transformer.compute_cos
     compute_sin = params.get('compute_sin')
     compute_tan = params.get('compute_tan')
     output_arg = params.get('output_arg')
