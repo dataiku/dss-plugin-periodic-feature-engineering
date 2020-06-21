@@ -23,8 +23,7 @@ class TrigonometricTransformer():
     """
     The TrigonometricTransformer's goal is to set up all the functions
     that will be called by the recipe's processor. 
-    These functions are defined as lambdas functions contextualized by the end
-    user's selection. 
+    These functions are defined as lambdas functions contextualized by the end user's selection. 
     This way the condition in order to compute the asked functions is checked only once.
     """
     def __init__(self, L_choosed_functions):
