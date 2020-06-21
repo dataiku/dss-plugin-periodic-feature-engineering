@@ -1,5 +1,5 @@
 import math
-
+i = 0
 #Parameters import :
 periodical_column_name = params.get('periodical_column')
 column_period = params.get('column_period')
@@ -16,6 +16,7 @@ if output_arg:
     
 for choosed_function, function in zip(L_choosed_functions, L_functions):
     if choosed_function :
+        i+=1
         L_trigonometric_cols.append(periodical_column_name+"_"+function)
         
 class TrigonometricTransformer():
@@ -62,7 +63,7 @@ def process(row):
         
     row['error'] = error_message
     row['cos_val'] = cos_val
-    row['L_trigonometric_cols'] = L_trigonometric_cols
+    row['i'] = i
     
     row[periodical_column_name] = periodical_column_value
     return row
