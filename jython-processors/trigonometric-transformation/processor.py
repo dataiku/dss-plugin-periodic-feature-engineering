@@ -4,7 +4,7 @@ import json
 
 class TrigonometricTransformer():
     
-    def __init__(self)
+    def __init__(self, params)
 
 def compute_trigonometric_features(L_computation, arg):
     compute_cos = L_computation[0]
