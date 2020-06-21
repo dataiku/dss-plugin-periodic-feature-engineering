@@ -1,6 +1,4 @@
 import math
-import json
-
 
 """
 class TrigonometricTransformer():
