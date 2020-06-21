@@ -28,9 +28,8 @@ class TrigonometricTransformer():
         self.L_funcs_choices = L_funcs_choices
         self.trigonometric_transformer = None
         self.build_trigonometric_transformer(self.L_funcs_available, self.L_funcs_available)
-        self.sin_transformer = lambda x: math.sin(x)
-        self.sin_transformer = lambda x: math.sin(x)
         pass
+    
     def build_trigonometric_transformer(self, L_funcs_available, L_funcs_available):
         for comp_func
         self.dict_trigonometric_transformer = {'cos': lambda x: math.cos(x),
