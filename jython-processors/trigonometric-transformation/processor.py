@@ -23,7 +23,6 @@ class TrigonometricTransformer():
     
     def __init__(self, L_funcs_choices):
         #self.params = params
-        self.L_funcs_available = L_funcs_available
         self.L_funcs_choices = L_funcs_choices
         self.trigonometric_transformer = {}
         self.build_trigonometric_transformer( self.L_funcs_choices)
