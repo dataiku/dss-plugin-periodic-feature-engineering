@@ -59,10 +59,7 @@ def process(row):
         
     except Exception as e:
         error_message = str(e)
-        arg_val = None
-        cos_val = None
-        sin_val = None
-        tan_val = None
+        arg_val, cos_val, sin_val, tan_val  = None, None, None, None
     
     row[arg_name] = arg_val
     row[cos_name] = cos_val
