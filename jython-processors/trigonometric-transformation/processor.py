@@ -30,7 +30,6 @@ class TrigonometricTransformer():
         pass
     
     def build_trigonometric_transformer(self, L_funcs_choices):
-        #for func_available, choosed in zip(L_funcs_available, L_funcs_choices):
         cos_choosed = L_funcs_choices[0]
         sin_choosed = L_funcs_choices[1]
         tan_choosed = L_funcs_choices[2]
