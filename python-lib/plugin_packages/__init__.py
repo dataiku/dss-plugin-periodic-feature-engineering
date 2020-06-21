@@ -1,1 +1,1 @@
-from plugin_packages.trigonometric_transformer import 
+from plugin_packages.trigonometric_transformer import TrigonometricTransformer
