@@ -8,7 +8,8 @@ class TrigonometricTransformer():
         self.params = params
         self.compute_cos = True
         pass
-    
+    def hello_world(self):
+        pass
 
 trigonometric_transformer = TrigonometricTransformer(params=params)
 
