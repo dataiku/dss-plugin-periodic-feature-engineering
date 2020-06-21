@@ -34,5 +34,6 @@ def process(row):
         
         
     res['trigonometric_features'] = dict_trigonometric_features
+    res['error_message']
     
     #return json.dumps(res)
