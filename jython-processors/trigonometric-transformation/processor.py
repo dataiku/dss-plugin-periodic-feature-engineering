@@ -14,17 +14,25 @@ def process(row):
     periodical_column_value = row[periodical_column_name]
     arg_val = math.pi/2.0-(math.pi*int(periodical_column_value))/(column_period/2.0)
     res = {}
-    if compute_cos:
-        cos_name = periodical_column_name + "_cos"
-        res[cos_name] = math.cos(arg_val)   
-    if compute_sin:
-        sin_name = periodical_column_name + "_sin"
-        res[sin_name] = math.sin(arg_val)
-    if compute_tan:
-        tan_name = periodical_column_name + "_tan"
-        res[tan_name] = math.tan(arg_val)
-    if output_arg:
-        arg_name = periodical_column_name + "_arg"
-        res[arg_name] = arg_val
+    dict_trigonometric_features = {}
+    try:
+        if compute_cos:
+            cos_name = periodical_column_name + "_cos"
+            dict_trigonometric_features[cos_name] = math.cos(arg_val)   
+        if compute_sin:
+            sin_name = periodical_column_name + "_sin"
+            dict_trigonometric_features[sin_name] = math.sin(arg_val)
+        if compute_tan:
+            tan_name = periodical_column_name + "_tan"
+            dict_trigonometric_features[tan_name] = math.tan(arg_val)
+        if output_arg:
+            arg_name = periodical_column_name + "_arg"
+            dict_trigonometric_features[arg_name] = arg_val
+        error_message = ""
+    except Exception as e:
+        error_message = str(e)
+        
+        
+    res['trigonometric_features'] = dict_trigonometric_features
     
-    return json.dumps(res)
+    #return json.dumps(res)
