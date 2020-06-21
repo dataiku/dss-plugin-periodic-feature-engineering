@@ -7,7 +7,6 @@ compute_cos = params.get('compute_cos')
 compute_sin = params.get('compute_sin')
 compute_tan = params.get('compute_tan')
 output_arg = params.get('output_arg')
-row is not None
 L_choosed_functions = [compute_cos, compute_sin, compute_tan]
 L_functions = ['cos', 'sin', 'tan']
 L_trigonometric_cols = []
