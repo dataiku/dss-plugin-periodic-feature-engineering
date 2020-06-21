@@ -27,9 +27,9 @@ class TrigonometricTransformer():
     This way the condition in order to compute the asked functions is checked only once.
     
     - 'build_trigonometric_transformer' : is a method allowing to setup the lambdas functions 
-        called by the TrigonometricTransformer()
+        called by the TrigonometricTransformer() class.
     - 'compute_trigonometric_transform' : is a method allowing to map the dataset variable 
-        to the functions set by build_trigonometric_transformer
+        to the functions set by the build_trigonometric_transformer() method.
     """
     def __init__(self, L_choosed_functions):
         self.L_choosed_functions = L_choosed_functions
