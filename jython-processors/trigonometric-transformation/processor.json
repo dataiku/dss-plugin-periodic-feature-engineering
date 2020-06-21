@@ -57,7 +57,7 @@ Its result can be read over a trigonometric circle in the same way we read a clo
             "name": "column_period",
             "label":"column period",
             "type": "DOUBLE",
-            "defaultValue" : 366,
+            "defaultValue" : 365.24,
             "description": "Periodical column period"
         },
         {
