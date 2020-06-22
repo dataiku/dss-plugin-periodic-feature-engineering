@@ -58,6 +58,7 @@ class TrigonometricTransformer():
             self.trigonometric_features['cos'][value] = self.trigonometric_transformer['cos'](value_argument)
             self.trigonometric_features['sin'][value] = self.trigonometric_transformer['sin'](value_argument)
             self.trigonometric_features['tan'][value] = self.trigonometric_transformer['tan'](value_argument)
+            pass
             
 #Parameters import :
 periodical_column_name = params.get('periodical_column')
