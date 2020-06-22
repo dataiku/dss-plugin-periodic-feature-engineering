@@ -111,7 +111,7 @@ def process(row):
         if value is not None:
             row[column] = value
         
-    row['trigonometric_log'] = log_message
+    row['trigonometric_log_%s'%periodical_column_name] = log_message
     
     row[periodical_column_name] = periodical_column_value
     return row
