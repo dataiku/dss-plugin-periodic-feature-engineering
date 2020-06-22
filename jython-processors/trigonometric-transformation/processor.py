@@ -114,5 +114,5 @@ def process(row):
         
     row['trigonometric_log_%s'%periodical_column_name] = log_message
     
-    row[periodical_column_name] = periodical_column_value
+    #row[periodical_column_name] = periodical_column_value
     return row
