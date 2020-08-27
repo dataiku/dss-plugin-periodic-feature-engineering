@@ -7,13 +7,10 @@
     // Meta data for display purposes:
     "meta": {
         // label: name of the plugin as displayed, should be short
-        "label": "Trigonometric transformation",
+        "label": "Periodic feature engineering",
 
         // description: longer string to help end users understand what this plugin does
-        "description": "This plugin adds a processor in the prepare recipe : 'Custom processor trigonometric transformation'.\
-This processor will allow to handle numerical periodical columns.\
-A numerical column can be considered as periodical if its values describe a cycle from one period to another (ie : the last value of a period p is really close to the first value of its following period p+1).\
-        ",
+        "description": "Compute new features from periodic columns (day of the week, latitude/longitude, etc...)",
 
         "author": "Dataiku (Malick KONATE)",
 

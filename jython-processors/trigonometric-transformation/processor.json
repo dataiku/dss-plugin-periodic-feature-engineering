@@ -1,23 +1,9 @@
-/* This file is the descriptor for the Custom jython step polarize periodical feature */
 {
     "meta" : {
-        // label: name of the data prep step as displayed, should be short
         "label": "Custom processor trigonometric transformation",
 
-        // description: longer string to help end users understand what this data prep step does
-        "description": "This processor applies a trigonometric transformation over a periodical column.\
-Its result can be read over a trigonometric circle in the same way we read a clock (it starts from the top and goes in the clockwise direction of roatation )\
-    Example of periodical columns : \
-    - 'Day of year' starts from 1 and goes toward 366 maximum : but the December 31st is really close to Janueary 1st.\
-        --> Once polarized day of year number 1 shoud have cos~0 and sin~1\
-        --> Once polarized day of year number 91 shoud have cos~1 and sin~0\
-        --> Once polarized day of year number 182 shoud have cos~0 and sin~-1\
-        --> Once polarized day of year number 273 shoud have cos~-1 and sin~0\
-        --> Once polarized day of year number 365 shoud have cos~0 and sin~1\
-    - 'Day of month' starts from 1 and goes toward 31 maximum : but the last day of a given month is really close to se first one of the next month.\
-    - 'Day of week' starts from 1 and goes toward 7 : but sunday really close to  monday.",
+        "description": "This processor manages periodical columns (day of year, day of week ...) to create features by applying them a trigonometric transform",
 
-        // icon: must be one of the FontAwesome 3.2.1 icons, complete list here at https://fontawesome.com/v3.2.1/icons/
         "icon": "icon-circle-blank"
     },
 
@@ -27,22 +13,12 @@ Its result can be read over a trigonometric circle in the same way we read a clo
      * - ROW : the code outputs a row
      * - ROWS : the code outputs an array of rows
      */
-    "mode": "ROW",// replace by "ROW"
-
-    /* params:
-    DSS will generate a formular from this list of requested parameters.
-    Your component code can then access the value provided by users using the "name" field of each parameter.
-
-    Available parameter types include:
-    STRING, INT, DOUBLE, BOOLEAN, DATE, SELECT, TEXTAREA, MAP, PRESET and others.
-
-    For the full list and for more details, see the documentation: https://doc.dataiku.com/dss/latest/plugins/reference/params.html
-    */
+    "mode": "ROW",
     "params": [
         {
-            "name": "periodical_column",
-            "label": "periodiclal column",
-            "type": "COLUMN",
+            "name": "periodical_columns",
+            "label": "periodical column",
+            "type": "COLUMNS",
             "description": "Column containing a periodical information",
             "mandatory": true
         },
