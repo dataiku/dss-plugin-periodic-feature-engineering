@@ -9,6 +9,8 @@
         "tags": [
             "Machine Learning"
         ],
-        "licenseInfo": "Apache Software License"
+        "licenseInfo": "Apache Software License",
+        "url": "https://www.dataiku.com/dss/plugins/info/periodic-feature-engineering.html",
+        "supportLevel": "NOT_SUPPORTED"
     }
 }

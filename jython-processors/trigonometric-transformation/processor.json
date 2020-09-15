@@ -1,59 +1,34 @@
 {
     "meta": {
-        "label": "Custom processor trigonometric transformation",
-        "description": "This processor manages periodical columns (day of year, day of week ...) to create features by applying them a trigonometric transform",
+        "label": "Extract features from a periodic column",
+        "description": "Extract features from a periodic column (day of week, latitude, ...) to compute its sinus, cosinus, tangent and argument values",
         "icon": "icon-circle-blank"
     },
     "mode": "ROW",
+    "processorTags": [
+        "MATH"
+    ],
     "params": [
         {
-            "name": "periodical_columns",
-            "label": "periodical column",
-            "type": "COLUMNS",
-            "description": "Column containing a periodical information",
-            "mandatory": true
+            "name": "periodic_column",
+            "label": "Periodic column",
+            "type": "COLUMN",
+            "mandatory": true,
+            "allowedColumnTypes": [
+                "tinyint",
+                "smallint",
+                "int",
+                "bigint",
+                "float",
+                "double"
+            ]
         },
         {
-            "name": "process_as_time_dimension",
-            "label": "Process as time dimension ?",
-            "type": "BOOLEAN",
-            "defaultValue": true,
-            "description": ""
-        },
-        {
-            "name": "column_period",
-            "label": "column period",
+            "name": "period",
+            "label": "Period",
             "type": "DOUBLE",
-            "defaultValue": 365.24,
-            "description": "Periodical column period"
-        },
-        {
-            "name": "compute_cos",
-            "label": "compute cosinus",
-            "type": "BOOLEAN",
-            "defaultValue": true,
-            "description": ""
-        },
-        {
-            "name": "compute_sin",
-            "label": "compute sinus",
-            "type": "BOOLEAN",
-            "defaultValue": true,
-            "description": ""
-        },
-        {
-            "name": "compute_tan",
-            "label": "compute tan",
-            "type": "BOOLEAN",
-            "defaultValue": false,
-            "description": ""
-        },
-        {
-            "name": "output_arg",
-            "label": "output the feature argument",
-            "type": "BOOLEAN",
-            "defaultValue": false,
-            "description": ""
+            "mandatory": true,
+            "defaultValue": 365.24
         }
     ]
 }
