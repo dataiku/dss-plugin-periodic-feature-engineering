@@ -1,28 +1,14 @@
 {
     "id": "trigonometric-transformation",
-
-    // It is highly recommended to use Semantic Versioning
-    "version": "0.0.2",
-
-    // Meta data for display purposes:
+    "version": "0.1.0",
     "meta": {
-        // label: name of the plugin as displayed, should be short
-        "label": "Periodic feature engineering",
-
-        // description: longer string to help end users understand what this plugin does
+        "label": "Periodic Feature Engineering",
         "description": "Compute new features from periodic columns (day of the week, latitude/longitude, etc...)",
-
-        "author": "Dataiku (Malick KONATE)",
-
-        // icon: must be one of the FontAwesome 3.2.1 icons, complete list here at https://fontawesome.com/v3.2.1/icons/
+        "author": "Dataiku (Malick KONATE and Alex COMBESSIE)",
         "icon": "icon-circle-blank",
-
-        // List of tags for filtering the list of plugins
-        "tags": [], //for example: ["Machine Learning", "NLP"]
-
-        // URL where the user can learn more about the plugin
-        "url": "",
-
+        "tags": [
+            "Machine Learning"
+        ],
         "licenseInfo": "Apache Software License"
     }
 }

@@ -1,18 +1,9 @@
 {
-    "meta" : {
+    "meta": {
         "label": "Custom processor trigonometric transformation",
-
         "description": "This processor manages periodical columns (day of year, day of week ...) to create features by applying them a trigonometric transform",
-
         "icon": "icon-circle-blank"
     },
-
-    /*
-     * the processor mode, dictating what output is expected:
-     * - CELL : the code outputs a value
-     * - ROW : the code outputs a row
-     * - ROWS : the code outputs an array of rows
-     */
     "mode": "ROW",
     "params": [
         {
@@ -24,44 +15,44 @@
         },
         {
             "name": "process_as_time_dimension",
-            "label":"Process as time dimension ?",
+            "label": "Process as time dimension ?",
             "type": "BOOLEAN",
-            "defaultValue" : true,
+            "defaultValue": true,
             "description": ""
         },
         {
             "name": "column_period",
-            "label":"column period",
+            "label": "column period",
             "type": "DOUBLE",
-            "defaultValue" : 365.24,
+            "defaultValue": 365.24,
             "description": "Periodical column period"
         },
         {
             "name": "compute_cos",
-            "label":"compute cosinus",
+            "label": "compute cosinus",
             "type": "BOOLEAN",
-            "defaultValue" : true,
+            "defaultValue": true,
             "description": ""
         },
         {
             "name": "compute_sin",
-            "label":"compute sinus",
+            "label": "compute sinus",
             "type": "BOOLEAN",
-            "defaultValue" : true,
+            "defaultValue": true,
             "description": ""
         },
         {
             "name": "compute_tan",
-            "label":"compute tan",
+            "label": "compute tan",
             "type": "BOOLEAN",
-            "defaultValue" : false,
+            "defaultValue": false,
             "description": ""
         },
         {
             "name": "output_arg",
-            "label":"output the feature argument",
+            "label": "output the feature argument",
             "type": "BOOLEAN",
-            "defaultValue" : false,
+            "defaultValue": false,
             "description": ""
         }
     ]
