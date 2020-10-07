@@ -5,7 +5,7 @@ import math
 periodic_column = params.get('periodic_column')
 min_value = params.get('min_value')
 max_value = params.get('max_value')
-feature_period = math.fabs(min_value) + math.fabs(max_value)
+#feature_period = math.fabs(min_value) + math.fabs(max_value) #VERSION BEFORE THE SCALING ADDITION
 
 #Production code :
 def process(row):
@@ -14,11 +14,13 @@ def process(row):
     
     try:
         x = float(x)
-        
-        if x < 0 :
-            x = feature_period + x
+        x_scaled = (x - min_value)/(max_value - min_value)
+        feature_period = 1
+        #if x < 0 : #VERSION BEFORE THE SCALING ADDITION
+            #x = feature_period + x #VERSION BEFORE THE SCALING ADDITION
             
-        arg_val = math.pi/2.0-(math.pi*x)/(feature_period/2.0)
+        #arg_val = math.pi/2.0-(math.pi*x)/(feature_period/2.0) #VERSION BEFORE THE SCALING ADDITION
+        arg_val = math.pi/2.0-(math.pi*x_scaled)/(feature_period/2.0) 
         cos_val = math.cos(arg_val)
         sin_val = math.sin(arg_val)
         tan_val = math.tan(arg_val)
