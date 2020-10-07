@@ -26,14 +26,12 @@
         {
             "name": "min_value",
             "label":"Minimum value",
-            "type": "DOUBLE",
-            "description": ""
+            "type": "DOUBLE"
         },
         {
             "name": "max_value",
             "label":"Maximum value",
-            "type": "DOUBLE",
-            "description": ""
+            "type": "DOUBLE"
         }  
     ]
 }
