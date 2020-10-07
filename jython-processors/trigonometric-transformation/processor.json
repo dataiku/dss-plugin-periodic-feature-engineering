@@ -24,18 +24,16 @@
             ]
         },
         {
-            "name": "period_min",
-            "label":"Period min",
+            "name": "min_value",
+            "label":"Minimum value",
             "type": "DOUBLE",
-            "defaultValue" : 0.0,
-            "description": "Period minimum value"
+            "description": ""
         },
         {
-            "name": "period_max",
-            "label":"Period max",
+            "name": "max_value",
+            "label":"Maximum value",
             "type": "DOUBLE",
-            "defaultValue" : 366.0,
-            "description": "Period maximum value"
+            "description": ""
         }  
     ]
 }
