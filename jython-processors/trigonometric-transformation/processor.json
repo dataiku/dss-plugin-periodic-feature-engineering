@@ -24,11 +24,18 @@
             ]
         },
         {
-            "name": "period",
-            "label": "Period",
+            "name": "period_min",
+            "label":"Period min",
             "type": "DOUBLE",
-            "mandatory": true,
-            "defaultValue": 365.24
-        }
+            "defaultValue" : 0.0,
+            "description": "Period minimum value"
+        },
+        {
+            "name": "period_max",
+            "label":"Period max",
+            "type": "DOUBLE",
+            "defaultValue" : 366.0,
+            "description": "Period maximum value"
+        }  
     ]
 }
