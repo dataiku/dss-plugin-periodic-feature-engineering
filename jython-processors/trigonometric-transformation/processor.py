@@ -45,6 +45,6 @@ def process(row):
     row["{0}_cos".format(periodic_column)] = cos_val
     row["{0}_sin".format(periodic_column)] = sin_val
     row["{0}_tan".format(periodic_column)] = tan_val
-    row["log_message"] = log_message
+    row["{0}_transformation_log".format(periodic_column)] = log_message
     
     return row
