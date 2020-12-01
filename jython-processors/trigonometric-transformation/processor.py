@@ -3,9 +3,12 @@ import math
 
 #Parameters import :
 periodic_column = params.get('periodic_column')
-min_value = params.get('min_value')
-max_value = params.get('max_value')
-#feature_period = math.fabs(min_value) + math.fabs(max_value) #VERSION BEFORE THE SCALING ADDITION
+min_value = float(params.get('min_value'))
+max_value = float(params.get('max_value'))
+
+# min_adjusted and max_adjusted allows to adjust all the values (translation of "- min_adjusted")
+max_adjusted = max_value - min_value
+min_adjusted = 0 # = (min_value - min_value)
 
 #Production code :
 def process(row):
@@ -13,13 +16,9 @@ def process(row):
     x = row[periodic_column]
     
     try:
-        x = float(x)
-        x_scaled = (x - min_value)/(max_value - min_value)
+        x_adjusted = float(x) - min_value
+        x_scaled = (x_adjusted - min_adjusted)/(max_adjusted - min_adjusted )# = (x_adjusted / max_adjusted)
         feature_period = 1
-        #if x < 0 : #VERSION BEFORE THE SCALING ADDITION
-            #x = feature_period + x #VERSION BEFORE THE SCALING ADDITION
-            
-        #arg_val = math.pi/2.0-(math.pi*x)/(feature_period/2.0) #VERSION BEFORE THE SCALING ADDITION
         arg_val = math.pi/2.0-(math.pi*x_scaled)/(feature_period/2.0) 
         cos_val = math.cos(arg_val)
         sin_val = math.sin(arg_val)
