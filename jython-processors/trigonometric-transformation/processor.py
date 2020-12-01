@@ -1,4 +1,3 @@
-#Packages import
 import math
 
 #Parameters import :
